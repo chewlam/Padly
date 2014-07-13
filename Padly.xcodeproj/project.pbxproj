@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A2B9A0E1972089D00FB28FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B9A0D1972089D00FB28FC /* AppDelegate.swift */; };
+		4A2B9A101972089D00FB28FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B9A0F1972089D00FB28FC /* ViewController.swift */; };
+		4A2B9A131972089D00FB28FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B9A111972089D00FB28FC /* Main.storyboard */; };
+		4A2B9A151972089D00FB28FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B9A141972089D00FB28FC /* Images.xcassets */; };
+		4A2B9A211972089D00FB28FC /* PadlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B9A201972089D00FB28FC /* PadlyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A2B9A1B1972089D00FB28FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A2B9A001972089D00FB28FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A2B9A071972089D00FB28FC;
+			remoteInfo = Padly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A2B9A081972089D00FB28FC /* Padly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A2B9A0C1972089D00FB28FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A2B9A0D1972089D00FB28FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A2B9A0F1972089D00FB28FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A2B9A121972089D00FB28FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A2B9A141972089D00FB28FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A2B9A1A1972089D00FB28FC /* PadlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PadlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A2B9A1F1972089D00FB28FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A2B9A201972089D00FB28FC /* PadlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadlyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A2B9A051972089D00FB28FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A2B9A171972089D00FB28FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A2B99FF1972089D00FB28FC = {
+			isa = PBXGroup;
+			children = (
+				4A2B9A0A1972089D00FB28FC /* Padly */,
+				4A2B9A1D1972089D00FB28FC /* PadlyTests */,
+				4A2B9A091972089D00FB28FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A2B9A091972089D00FB28FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B9A081972089D00FB28FC /* Padly.app */,
+				4A2B9A1A1972089D00FB28FC /* PadlyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A2B9A0A1972089D00FB28FC /* Padly */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B9A0D1972089D00FB28FC /* AppDelegate.swift */,
+				4A2B9A0F1972089D00FB28FC /* ViewController.swift */,
+				4A2B9A111972089D00FB28FC /* Main.storyboard */,
+				4A2B9A141972089D00FB28FC /* Images.xcassets */,
+				4A2B9A0B1972089D00FB28FC /* Supporting Files */,
+			);
+			path = Padly;
+			sourceTree = "<group>";
+		};
+		4A2B9A0B1972089D00FB28FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B9A0C1972089D00FB28FC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A2B9A1D1972089D00FB28FC /* PadlyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B9A201972089D00FB28FC /* PadlyTests.swift */,
+				4A2B9A1E1972089D00FB28FC /* Supporting Files */,
+			);
+			path = PadlyTests;
+			sourceTree = "<group>";
+		};
+		4A2B9A1E1972089D00FB28FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B9A1F1972089D00FB28FC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A2B9A071972089D00FB28FC /* Padly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A2B9A241972089D00FB28FC /* Build configuration list for PBXNativeTarget "Padly" */;
+			buildPhases = (
+				4A2B9A041972089D00FB28FC /* Sources */,
+				4A2B9A051972089D00FB28FC /* Frameworks */,
+				4A2B9A061972089D00FB28FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Padly;
+			productName = Padly;
+			productReference = 4A2B9A081972089D00FB28FC /* Padly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A2B9A191972089D00FB28FC /* PadlyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A2B9A271972089D00FB28FC /* Build configuration list for PBXNativeTarget "PadlyTests" */;
+			buildPhases = (
+				4A2B9A161972089D00FB28FC /* Sources */,
+				4A2B9A171972089D00FB28FC /* Frameworks */,
+				4A2B9A181972089D00FB28FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A2B9A1C1972089D00FB28FC /* PBXTargetDependency */,
+			);
+			name = PadlyTests;
+			productName = PadlyTests;
+			productReference = 4A2B9A1A1972089D00FB28FC /* PadlyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A2B9A001972089D00FB28FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = null;
+				TargetAttributes = {
+					4A2B9A071972089D00FB28FC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					4A2B9A191972089D00FB28FC = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 4A2B9A071972089D00FB28FC;
+					};
+				};
+			};
+			buildConfigurationList = 4A2B9A031972089D00FB28FC /* Build configuration list for PBXProject "Padly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A2B99FF1972089D00FB28FC;
+			productRefGroup = 4A2B9A091972089D00FB28FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A2B9A071972089D00FB28FC /* Padly */,
+				4A2B9A191972089D00FB28FC /* PadlyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A2B9A061972089D00FB28FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2B9A131972089D00FB28FC /* Main.storyboard in Resources */,
+				4A2B9A151972089D00FB28FC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A2B9A181972089D00FB28FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A2B9A041972089D00FB28FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2B9A101972089D00FB28FC /* ViewController.swift in Sources */,
+				4A2B9A0E1972089D00FB28FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A2B9A161972089D00FB28FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2B9A211972089D00FB28FC /* PadlyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A2B9A1C1972089D00FB28FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A2B9A071972089D00FB28FC /* Padly */;
+			targetProxy = 4A2B9A1B1972089D00FB28FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A2B9A111972089D00FB28FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A2B9A121972089D00FB28FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A2B9A221972089D00FB28FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A2B9A231972089D00FB28FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A2B9A251972089D00FB28FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Padly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A2B9A261972089D00FB28FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Padly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4A2B9A281972089D00FB28FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Padly.app/Padly";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PadlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		4A2B9A291972089D00FB28FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Padly.app/Padly";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PadlyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A2B9A031972089D00FB28FC /* Build configuration list for PBXProject "Padly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A2B9A221972089D00FB28FC /* Debug */,
+				4A2B9A231972089D00FB28FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A2B9A241972089D00FB28FC /* Build configuration list for PBXNativeTarget "Padly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A2B9A251972089D00FB28FC /* Debug */,
+				4A2B9A261972089D00FB28FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4A2B9A271972089D00FB28FC /* Build configuration list for PBXNativeTarget "PadlyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A2B9A281972089D00FB28FC /* Debug */,
+				4A2B9A291972089D00FB28FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A2B9A001972089D00FB28FC /* Project object */;
+}
