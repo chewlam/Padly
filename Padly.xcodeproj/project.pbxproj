@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A2B9A0E1972089D00FB28FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B9A0D1972089D00FB28FC /* AppDelegate.swift */; };
-		4A2B9A101972089D00FB28FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B9A0F1972089D00FB28FC /* ViewController.swift */; };
+		4A2B9A101972089D00FB28FC /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B9A0F1972089D00FB28FC /* SearchResultsViewController.swift */; };
 		4A2B9A131972089D00FB28FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B9A111972089D00FB28FC /* Main.storyboard */; };
 		4A2B9A151972089D00FB28FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B9A141972089D00FB28FC /* Images.xcassets */; };
 		4A2B9A211972089D00FB28FC /* PadlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B9A201972089D00FB28FC /* PadlyTests.swift */; };
@@ -28,7 +28,7 @@
 		4A2B9A081972089D00FB28FC /* Padly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2B9A0C1972089D00FB28FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A2B9A0D1972089D00FB28FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A2B9A0F1972089D00FB28FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A2B9A0F1972089D00FB28FC /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		4A2B9A121972089D00FB28FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A2B9A141972089D00FB28FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A2B9A1A1972089D00FB28FC /* PadlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PadlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				4A2B9A0D1972089D00FB28FC /* AppDelegate.swift */,
-				4A2B9A0F1972089D00FB28FC /* ViewController.swift */,
+				4A2B9A0F1972089D00FB28FC /* SearchResultsViewController.swift */,
 				4A2B9A111972089D00FB28FC /* Main.storyboard */,
 				4A2B9A141972089D00FB28FC /* Images.xcassets */,
 				4A2B9A0B1972089D00FB28FC /* Supporting Files */,
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A2B9A101972089D00FB28FC /* ViewController.swift in Sources */,
+				4A2B9A101972089D00FB28FC /* SearchResultsViewController.swift in Sources */,
 				4A2B9A0E1972089D00FB28FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +328,7 @@
 				INFOPLIST_FILE = Padly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -339,6 +340,7 @@
 				INFOPLIST_FILE = Padly/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
