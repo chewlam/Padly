@@ -9,6 +9,9 @@ import UIKit
 
 
 class Monster {
+    let pherderUrl = "https://www.padherder.com"
+    let pdxImgUrl = "http://www.puzzledragonx.com/en/img/monster/"
+
     var id: Int?
     var name: String?
     var type: String?
@@ -16,8 +19,9 @@ class Monster {
     var element: String?
     var element_sub: String?
     var max_level: Int?
-    var img40_url: String?
-    var img60_url: String?
+    var img40: String?
+    var img60: String?
+    var img_full: String?
     var rarity: Int?
     var hp_min: Int?
     var hp_max: Int?
@@ -40,80 +44,82 @@ class Monster {
     let elements: [Int: String] = [0: "Fire", 1: "Water", 2: "Wood", 3: "Light", 4: "Dark"]
     let types: [Int: String] = [0: "Evo Material", 1: "Balanced", 2: "Physical", 3: "Healer", 4: "Dragon", 5: "God", 6: "Attacker", 7: "Devil", 12: "Awoken Skill Material", 13: "Protected", 14: "Enhance Material"]
     
-    /*
-    {
-    "id": 1218,
-    "name": "Kirin of the Sacred Gleam, Sakuya",
-    "max_level": 99,
-    "image40_href": "/static/img/monsters/40x40/1218.76370c1d5499.png",
-    "image40_size": 4739,
-    "image60_href": "/static/img/monsters/60x60/1218.6e2e6f6dfb70.png",
-    "image60_size": 9444,
-    "rarity": 7,
-    "hp_min": 1271,
-    "hp_max": 3528,
-    "hp_scale": 1.0,
-    "rcv_min": 256,
-    "rcv_max": 384,
-    "rcv_scale": 1.0,
-    "atk_min": 913,
-    "atk_max": 1370,
-    "atk_scale": 1.0,
-    "team_cost": 35,
-    "xp_curve": 4000000,
-    "active_skill": "Boisterous Dance",
-    "leader_skill": "Dance of the Four Origins",
-    "feed_xp": 1575.0,
-    "awoken_skills": [17, 12, 11, 28, 17, 21, 19],
-    "jp_only": false
-    "type": 5,
-    "type2": 2,
-    "element": 3,
-    "element2": 3,
-    }
-    */
     
     init() {
         
     }
 
     func load(obj: NSDictionary) {
-        self.id = obj["id"] as? Int
-        self.name = obj["name"] as? String
-        self.max_level = obj["max_level"] as? Int
-        self.img40_url = obj["image40_href"] as? String
-        self.img60_url = obj["image60_href"] as? String
-        self.rarity = obj["rarity"] as? Int
-        self.hp_min = obj["hp_min"] as? Int
-        self.hp_max = obj["hp_max"] as? Int
-        self.hp_scale = obj["hp_scale"] as? Float
-        self.rcv_min = obj["rcv_min"] as? Int
-        self.rcv_max = obj["rcv_max"] as? Int
-        self.rcv_scale = obj["rcv_scale"] as? Float
-        self.atk_min = obj["atk_min"] as? Int
-        self.atk_max = obj["atk_max"] as? Int
-        self.atk_scale = obj["atk_scale"] as? Float
-        self.cost = obj["team_cost"] as? Int
-        self.feed_xp = obj["feed_xp"] as? Int
-        self.xp_curve = obj["xp_curve"] as? Int
-        self.active_skill = obj["active_skill"] as? String
-        self.leader_skill = obj["leader_skill"] as? String
-        self.jp_only = obj["jp_only"] as? Bool
+        /*
+        {
+        "id": 1218,
+        "name": "Kirin of the Sacred Gleam, Sakuya",
+        "max_level": 99,
+        "image40_href": "/static/img/monsters/40x40/1218.76370c1d5499.png",
+        "image40_size": 4739,
+        "image60_href": "/static/img/monsters/60x60/1218.6e2e6f6dfb70.png",
+        "image60_size": 9444,
+        "rarity": 7,
+        "hp_min": 1271,
+        "hp_max": 3528,
+        "hp_scale": 1.0,
+        "rcv_min": 256,
+        "rcv_max": 384,
+        "rcv_scale": 1.0,
+        "atk_min": 913,
+        "atk_max": 1370,
+        "atk_scale": 1.0,
+        "team_cost": 35,
+        "xp_curve": 4000000,
+        "active_skill": "Boisterous Dance",
+        "leader_skill": "Dance of the Four Origins",
+        "feed_xp": 1575.0,
+        "awoken_skills": [17, 12, 11, 28, 17, 21, 19],
+        "jp_only": false
+        "type": 5,
+        "type2": 2,
+        "element": 3,
+        "element2": 3,
+        }
+        */
+
+        id = obj["id"] as? Int
+        name = obj["name"] as? String
+        max_level = obj["max_level"] as? Int
+        img40 = pherderUrl + (obj["image40_href"]! as String)
+        img60 = pherderUrl + (obj["image60_href"]! as String)
+        img_full = "\(pdxImgUrl)MONS_\(id).jpg"
+        rarity = obj["rarity"] as? Int
+        hp_min = obj["hp_min"] as? Int
+        hp_max = obj["hp_max"] as? Int
+        hp_scale = obj["hp_scale"] as? Float
+        rcv_min = obj["rcv_min"] as? Int
+        rcv_max = obj["rcv_max"] as? Int
+        rcv_scale = obj["rcv_scale"] as? Float
+        atk_min = obj["atk_min"] as? Int
+        atk_max = obj["atk_max"] as? Int
+        atk_scale = obj["atk_scale"] as? Float
+        cost = obj["team_cost"] as? Int
+        feed_xp = obj["feed_xp"] as? Int
+        xp_curve = obj["xp_curve"] as? Int
+        active_skill = obj["active_skill"] as? String
+        leader_skill = obj["leader_skill"] as? String
+        jp_only = obj["jp_only"] as? Bool
         
         if let x1 = obj["type"] as? Int {
-            self.type = self.types[x1];
+            type = self.types[x1];
         }
         
         if let x2 = obj["type2"] as? Int {
-            self.type_sub = self.types[x2];
+            type_sub = self.types[x2];
         }
 
         if let x3 = obj["element"] as? Int {
-            self.element = self.elements[x3];
+            element = self.elements[x3];
         }
 
         if let x4 = obj["element2"] as? Int {
-            self.element_sub = self.elements[x4];
+            element_sub = self.elements[x4];
         }
     }
 

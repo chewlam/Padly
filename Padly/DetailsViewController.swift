@@ -32,9 +32,8 @@ class DetailsViewController: UIViewController {
         nameLabel.text = self.monster?.name
         var scale: CGFloat = 2.0;
         
-        image.image = UIImage(data: NSData(contentsOfURL: NSURL(string: "\(Constants.url)\(self.monster?.img60_url)")))
-
-        bigImage.image = UIImage(data: NSData(contentsOfURL: NSURL(string: "\(Constants.pdxUrl)MONS_\(self.monster?.id).jpg")), scale: scale)
+        image.image = UIImage(data: NSData(contentsOfURL: NSURL(string: self.monster?.img60)))
+        bigImage.image = UIImage(data: NSData(contentsOfURL: NSURL(string: monster?.img_full)), scale: scale)
 
         var _text = "\(self.monster?.type)"
 

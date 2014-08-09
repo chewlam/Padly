@@ -14,6 +14,8 @@ protocol APIControllerProtocol {
 
 
 class APIController: NSObject {
+    let padlyServerUrl = "http://localhost:9000/"
+
     var delegate: APIControllerProtocol?
 
     init(delegate: APIControllerProtocol?) {
@@ -21,7 +23,7 @@ class APIController: NSObject {
     }
     
     func searchItunesFor(searchTerm: String) {
-        var urlPath = "\(Constants.url)api/monsters/"
+        var urlPath = "\(padlyServerUrl)data/monsters"
         var url: NSURL = NSURL(string: urlPath)
         var session = NSURLSession.sharedSession()
         

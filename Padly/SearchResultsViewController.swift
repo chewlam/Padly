@@ -45,8 +45,8 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         
         cell.textLabel.text = monster.name
         cell.imageView.image = UIImage(named: "Blank52")
-        var urlString: NSString = "\(Constants.url)\(monster.img40_url)"
-
+        var urlString: NSString = monster.img40!
+/*
         dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             var image: UIImage? = self.imageCache[urlString] as? UIImage
             if (!image) {
@@ -73,7 +73,8 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
                 cell.imageView.image = image
             }
         })
-
+*/
+        
         var detail = "HP \(monster.hp_max), ATK \(monster.atk_max), RCV \(monster.rcv_max), Cost \(monster.cost), \(monster.showFormattedRarity())"
         cell.detailTextLabel.text = detail
         
