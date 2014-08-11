@@ -11,57 +11,78 @@ import UIKit
 
 class DetailsViewController: UIViewController {
     
-    @IBOutlet var image: UIImageView
-    @IBOutlet var bigImage: UIImageView
-    @IBOutlet var nameLabel: UILabel
-    @IBOutlet var typeLabel: UILabel
-    @IBOutlet var idLabel: UILabel
-    @IBOutlet var costLabel: UILabel
-    @IBOutlet var elementLabel: UILabel
-    @IBOutlet var statTable: UITableView
-    @IBOutlet var rarityLabel: UILabel
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var bigImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var idLabel: UILabel!
+    @IBOutlet weak var costLabel: UILabel!
+    @IBOutlet weak var elementLabel: UILabel!
+    @IBOutlet weak var statTable: UITableView!
+    @IBOutlet weak var rarityLabel: UILabel!
+
+    @IBOutlet weak var minRCVLabel: UILabel!
+    @IBOutlet weak var minHPLabel: UILabel!
+    @IBOutlet weak var minLevelLabel: UILabel!
+    @IBOutlet weak var minATKLabel: UILabel!
+    
+    @IBOutlet weak var maxHPLabel: UILabel!
+    @IBOutlet weak var maxLevelLabel: UILabel!
+    @IBOutlet weak var maxATKLabel: UILabel!
+    @IBOutlet weak var maxRCVLabel: UILabel!
+    
+    @IBOutlet weak var currLevelLabel: UILabel!
+    @IBOutlet weak var currHPLabel: UILabel!
+    @IBOutlet weak var currRCVLabel: UILabel!
+    @IBOutlet weak var currATKLabel: UILabel!
 
     var monster: Monster?
     
-    init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder!) {
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = self.monster?.name
+        nameLabel.text = monster!.name
         var scale: CGFloat = 2.0;
         
-        image.image = UIImage(data: NSData(contentsOfURL: NSURL(string: self.monster?.img60)))
-        bigImage.image = UIImage(data: NSData(contentsOfURL: NSURL(string: monster?.img_full)), scale: scale)
+        image.image = UIImage(data: NSData(contentsOfURL: NSURL(string: monster!.img60!)))
+        bigImage.image = UIImage(data: NSData(contentsOfURL: NSURL(string: monster!.img_full!)))
+        
+        var _text = monster!.type
 
-        var _text = "\(self.monster?.type)"
-
-        if let _subtype = self.monster?.type_sub  {
-            _text += " / \(_subtype)"
+        if let _subtype = monster?.type_sub  {
+            _text = _text! + " / \(_subtype)"
         }
         typeLabel.text = _text
         
-        _text = "\(self.monster?.element)"
-        if let _subelement = self.monster?.element_sub  {
-            _text += " / \(_subelement)"
+        _text = monster!.element
+        if let _subelement = monster?.element_sub  {
+            _text = _text! + " / \(_subelement)"
         }
         elementLabel.text = _text
-
-        if let _cost = self.monster?.cost as? Int {
-            costLabel.text = "Cost \(String(_cost))"
-        }
         
-        rarityLabel.text = "\(self.monster?.showFormattedRarity())"
-        
-        if let _id = self.monster?.id as? Int {
-            idLabel.text = "No. " + String(_id)
-        }
-        
+        costLabel.text = "Cost \(monster!.cost!)"
+        rarityLabel.text = "\(self.monster!.showFormattedRarity())"
+        idLabel.text = "No. \(monster!.id!)"
+            
         idLabel.textColor = self.getColor()
         nameLabel.textColor = self.getColor()
         idLabel.backgroundColor = self.getBackgroundColor()
         nameLabel.backgroundColor = self.getBackgroundColor()
+        
+        minLevelLabel.text = String(1)
+        minHPLabel.text = String(monster!.hp_min!)
+        minATKLabel.text = String(monster!.hp_min!)
+        minRCVLabel.text = String(monster!.rcv_min!)
+        
+        maxLevelLabel.text = String(monster!.max_level!)
+        maxHPLabel.text = String(monster!.hp_max!)
+        maxATKLabel.text = String(monster!.hp_max!)
+        maxRCVLabel.text = String(monster!.rcv_max!)
+
+        
         
     }
     

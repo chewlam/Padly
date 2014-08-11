@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>753DBAB0-85ED-4A22-9062-5C534B1B9F8F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Padly</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B41A2DA45141CDCE637F7AEBBAD6D55D54516492</key>
+		<string>https://github.com/chewlam/Padly.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Padly.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B41A2DA45141CDCE637F7AEBBAD6D55D54516492</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chewlam/Padly.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B41A2DA45141CDCE637F7AEBBAD6D55D54516492</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B41A2DA45141CDCE637F7AEBBAD6D55D54516492</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Padly</string>
+		</dict>
+	</array>
+</dict>
+</plist>

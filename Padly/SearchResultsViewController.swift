@@ -13,13 +13,17 @@ import UIKit
 
 class SearchResultsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, APIControllerProtocol {
 
-    @IBOutlet var appsTableView: UITableView
+    @IBOutlet weak var appsTableView: UITableView!
     var monsterCache: [Monster] = []
-    @lazy var api: APIController = APIController(delegate: self)
+    lazy var api: APIController = APIController(delegate: self)
     var imageCache = NSMutableDictionary()
     
     let kCellIdentifier: String = "SearchResultCell"
-    
+
+    required init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,17 +50,16 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         cell.textLabel.text = monster.name
         cell.imageView.image = UIImage(named: "Blank52")
         var urlString: NSString = monster.img40!
-/*
         dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             var image: UIImage? = self.imageCache[urlString] as? UIImage
-            if (!image) {
+            if image == nil {
                 var imgURL: NSURL = NSURL(string: urlString)
 
                 // Download an NSData representation of the image at the URL
                 let request: NSURLRequest = NSURLRequest(URL: imgURL)
                 let urlConnection: NSURLConnection = NSURLConnection(request: request, delegate: self)
                 NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response: NSURLResponse!,data: NSData!,error: NSError!) -> Void in
-                    if !error? {
+                    if error == nil {
                         //var imgData: NSData = NSData(contentsOfURL: imgURL)
                         image = UIImage(data: data)
                         
@@ -73,9 +76,9 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
                 cell.imageView.image = image
             }
         })
-*/
+
         
-        var detail = "HP \(monster.hp_max), ATK \(monster.atk_max), RCV \(monster.rcv_max), Cost \(monster.cost), \(monster.showFormattedRarity())"
+        var detail = "HP \(monster.hp_max!), ATK \(monster.atk_max!), RCV \(monster.rcv_max!), Cost \(monster.cost!), \(monster.showFormattedRarity())"
         cell.detailTextLabel.text = detail
         
         return cell

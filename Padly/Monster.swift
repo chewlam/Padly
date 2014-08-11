@@ -9,9 +9,8 @@ import UIKit
 
 
 class Monster {
-    let pherderUrl = "https://www.padherder.com"
-    let pdxImgUrl = "http://www.puzzledragonx.com/en/img/monster/"
-
+    let padlyServeUrl = "http://127.0.0.1:9000/assets/images/"
+    
     var id: Int?
     var name: String?
     var type: String?
@@ -83,12 +82,12 @@ class Monster {
         }
         */
 
-        id = obj["id"] as? Int
-        name = obj["name"] as? String
-        max_level = obj["max_level"] as? Int
-        img40 = pherderUrl + (obj["image40_href"]! as String)
-        img60 = pherderUrl + (obj["image60_href"]! as String)
-        img_full = "\(pdxImgUrl)MONS_\(id).jpg"
+        id = (obj["id"] as Int)
+        name = (obj["name"] as String)
+        max_level = (obj["max_level"] as Int)
+        img40 = padlyServeUrl + "\(id!).40x40.png"
+        img60 = padlyServeUrl + "\(id!).60x60.png"
+        img_full = padlyServeUrl + "\(id!).full.jpg"
         rarity = obj["rarity"] as? Int
         hp_min = obj["hp_min"] as? Int
         hp_max = obj["hp_max"] as? Int
@@ -124,7 +123,7 @@ class Monster {
     }
 
     func showFormattedRarity() -> String {
-        let v = String(count: self.rarity!, repeatedValue: Character("\u2605"))        
+        let v = String(count: self.rarity!, repeatedValue: Character("\u{2605}"))
 
         return v
     }
